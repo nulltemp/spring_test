@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.nulltemp.service;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.params.provider.Arguments.*;
@@ -15,8 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
 
-import com.example.demo.config.TestConfig;
-import com.example.demo.constant.MessageConstant;
+import com.nulltemp.config.TestConfig;
+import com.nulltemp.constant.MessageConstant;
+import com.nulltemp.service.MessageService;
 
 @SpringJUnitWebConfig(TestConfig.class)
 class MessageServiceTest {

@@ -1,4 +1,4 @@
-package com.example.demo.constant;
+package com.nulltemp.constant;
 
 public final class MessageConstant {
 	public static final String KEY_HELLO = "hello";

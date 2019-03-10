@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.nulltemp.controller;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -21,8 +21,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.example.demo.config.TestConfig;
-import com.example.demo.constant.MessageConstant;
+import com.nulltemp.config.TestConfig;
+import com.nulltemp.constant.MessageConstant;
 
 @SpringJUnitWebConfig(TestConfig.class)
 public class MessageControllerTest {

@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.nulltemp.config;
 
 import java.nio.charset.StandardCharsets;
 

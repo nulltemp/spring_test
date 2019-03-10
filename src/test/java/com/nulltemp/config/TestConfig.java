@@ -1,9 +1,9 @@
-package com.example.demo.config;
+package com.nulltemp.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan("com.example.demo")
+@ComponentScan("com.nulltemp")
 public class TestConfig {
 }

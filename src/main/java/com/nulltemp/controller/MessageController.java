@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.nulltemp.controller;
 
 import java.util.Locale;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.constant.MessageConstant;
-import com.example.demo.service.MessageService;
+import com.nulltemp.constant.MessageConstant;
+import com.nulltemp.service.MessageService;
 
 @CrossOrigin
 @RestController
