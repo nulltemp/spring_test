@@ -23,6 +23,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 import com.nulltemp.config.TestConfig;
 import com.nulltemp.constant.MessageConstant;
+import com.nulltemp.constant.UrlConstant;
 
 @SpringJUnitWebConfig(TestConfig.class)
 public class MessageControllerTest {
@@ -47,7 +48,7 @@ public class MessageControllerTest {
 			String expected = messageSource.getMessage(MessageConstant.KEY_HELLO,
 					new String[] { MessageConstant.DEFAULT_NAME }, locale);
 			testReporter.publishEntry("expected", expected);
-			mockMvc.perform(get("/messages/hello").locale(locale)).andExpect(status().isOk())
+			mockMvc.perform(get(UrlConstant.URL_API_BASE + "/messages/hello").locale(locale)).andExpect(status().isOk())
 					.andExpect(content().string(expected));
 		}
 
@@ -62,7 +63,8 @@ public class MessageControllerTest {
 		String expected = messageSource.getMessage(MessageConstant.KEY_HELLO,
 				new String[] { name }, Locale.US);
 		testReporter.publishEntry("expected", expected);
-		mockMvc.perform(get("/messages/hello?name={name}", name).locale(Locale.US)).andExpect(status().isOk())
+		mockMvc.perform(get(UrlConstant.URL_API_BASE + "/messages/hello?name={name}", name).locale(Locale.US))
+				.andExpect(status().isOk())
 				.andExpect(content().string(expected));
 	}
 }
